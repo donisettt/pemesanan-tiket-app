@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">Pemesanan Tiket</string>
+    <string name="app_name">Rentavel</string>
     <string-array name="daftar_kota">
         <item>Semarang (SRG)</item>
-        <item>Surabaya (SUB)</item>
+        <item>Surabaya (SBY)</item>
         <item>Bali (DPS)</item>
         <item>Jakarta (HLP)</item>
     </string-array>

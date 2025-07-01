@@ -71,4 +71,8 @@ dependencies {
 
     // Location
     implementation 'com.github.delight-im:Android-SimpleLocation:v1.1.0'
+
+    // Kotlin Coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3"
 }

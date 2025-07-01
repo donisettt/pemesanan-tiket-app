@@ -28,7 +28,7 @@ class HistoryAdapter(private val modelDatabase: MutableList<ModelDatabase>) :
         binding.tvKode1.text = when (data.keberangkatan) {
             "Jakarta" -> "JKT"
             "Semarang" -> "SRG"
-            "Surabaya" -> "SUB"
+            "Surabaya" -> "SBY"
             "Bali" -> "DPS"
             else -> "-"
         }
@@ -36,7 +36,7 @@ class HistoryAdapter(private val modelDatabase: MutableList<ModelDatabase>) :
         binding.tvKode2.text = when (data.tujuan) {
             "Jakarta" -> "JKT"
             "Semarang" -> "SRG"
-            "Surabaya" -> "SUB"
+            "Surabaya" -> "SBY"
             "Bali" -> "DPS"
             else -> "-"
         }

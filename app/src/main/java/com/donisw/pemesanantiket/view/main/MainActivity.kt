@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import com.donisw.pemesanantiket.R
@@ -22,6 +23,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var cvPesawat: CardView
     private lateinit var cvKapal: CardView
     private lateinit var cvKereta: CardView
+    private lateinit var tvGreeting: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,7 +34,13 @@ class MainActivity : AppCompatActivity() {
         cvPesawat = findViewById(R.id.cvPesawat)
         cvKapal = findViewById(R.id.cvKapal)
         cvKereta = findViewById(R.id.cvKereta)
+        tvGreeting = findViewById(R.id.tvGreeting)
+        val tvNamaUser = findViewById<TextView>(R.id.tvNamaUser)
+        val sharedPref = getSharedPreferences("user_session", MODE_PRIVATE)
+        val namaUser = sharedPref.getString("user_name", "User")
+        tvNamaUser.text = namaUser
 
+        setAutoGreeting()
         setStatusBar()
 
         imageProfile.setOnClickListener {
@@ -66,6 +74,17 @@ class MainActivity : AppCompatActivity() {
             setWindowFlag(this, WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS, false)
             window.statusBarColor = Color.TRANSPARENT
         }
+    }
+
+    private fun setAutoGreeting() {
+        val currentHour = java.util.Calendar.getInstance().get(java.util.Calendar.HOUR_OF_DAY)
+        val greeting = when (currentHour) {
+            in 5..11 -> "Good Morning,"
+            in 12..16 -> "Good Afternoon,"
+            in 17..20 -> "Good Evening,"
+            else -> "Good Night,"
+        }
+        tvGreeting.text = greeting
     }
 
     companion object {

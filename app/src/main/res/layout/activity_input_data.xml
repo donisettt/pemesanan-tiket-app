@@ -30,6 +30,7 @@
                     android:text="Pesan Tiket"
                     android:textColor="@color/black"
                     android:textSize="20sp"
+                    android:fontFamily="@font/poppins_reguler"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -52,14 +53,14 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="5dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -83,7 +84,8 @@
                             android:layout_marginEnd="20dp"
                             android:text="Mohon isi data dibawah ini sesuai dengan KTP Anda"
                             android:textColor="@color/white"
-                            android:textSize="18sp" />
+                            android:fontFamily="@font/poppins_reguler"
+                            android:textSize="15sp" />
 
                     </LinearLayout>
 
@@ -100,6 +102,7 @@
                             android:layout_height="wrap_content"
                             android:text="Nama Penumpang"
                             android:textColor="@color/black"
+                            android:fontFamily="@font/poppins_medium"
                             android:textSize="14sp" />
 
                         <com.google.android.material.textfield.TextInputEditText
@@ -108,6 +111,7 @@
                             android:layout_height="50dp"
                             android:backgroundTint="@color/primary"
                             android:hint="Masukan nama lengkap"
+                            android:fontFamily="@font/poppins_reguler"
                             android:imeOptions="actionNext"
                             android:inputType="text"
                             android:maxLines="1"
@@ -135,6 +139,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Keberangkatan"
+                                android:fontFamily="@font/poppins_medium"
                                 android:textColor="@color/black"
                                 android:textSize="14sp" />
 
@@ -178,6 +183,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Tujuan"
+                                android:fontFamily="@font/poppins_medium"
                                 android:textColor="@color/black"
                                 android:textSize="14sp" />
 
@@ -217,6 +223,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="Anak-anak (16+ tahun)"
+                            android:fontFamily="@font/poppins_reguler"
                             android:textColor="@color/black"
                             android:textSize="14sp" />
 
@@ -269,6 +276,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="Dewasa"
+                            android:fontFamily="@font/poppins_reguler"
                             android:textColor="@color/black"
                             android:textSize="14sp" />
 
@@ -320,6 +328,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Tipe / Kelas"
+                            android:fontFamily="@font/poppins_medium"
                             android:textColor="@color/black"
                             android:textSize="14sp" />
 
@@ -361,6 +370,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Tanggal Berangkat"
+                                android:fontFamily="@font/poppins_medium"
                                 android:textColor="@color/black"
                                 android:textSize="14sp" />
 
@@ -371,6 +381,7 @@
                                 android:backgroundTint="@color/primary"
                                 android:focusableInTouchMode="false"
                                 android:hint="Masukan tanggal"
+                                android:fontFamily="@font/poppins_reguler"
                                 android:imeOptions="actionNext"
                                 android:inputType="date"
                                 android:maxLines="1"
@@ -394,6 +405,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Nomor Telp / HP"
+                            android:fontFamily="@font/poppins_medium"
                             android:textColor="@color/black"
                             android:textSize="14sp" />
 
@@ -403,6 +415,7 @@
                             android:layout_height="50dp"
                             android:backgroundTint="@color/primary"
                             android:hint="Masukan nomor telepon"
+                            android:fontFamily="@font/poppins_reguler"
                             android:imeOptions="actionDone"
                             android:inputType="number"
                             android:maxLength="12"
@@ -421,7 +434,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_margin="30dp"
-                android:text="Jemput Sekarang"
+                android:text="Buat Transaksi"
+                android:fontFamily="@font/poppins_medium"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:textSize="16sp"

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home_wave">
+
+    <ImageView
+        android:id="@+id/ivIllustration"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="110dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter"
+        android:src="@drawable/onboarding"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/roundedContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="@drawable/bg_top_rounded_white"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nikmati Kemudahan Perjalan\nHanya Dengan Satu Aplikasi !"
+            android:textAlignment="center"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rentavel hadir untuk memberikan anda kemudahan dalam melakukan perjalanan, dengan berbagai benefit yang diberikan!"
+            android:textAlignment="center"
+            android:fontFamily="@font/poppins_reguler"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:backgroundTint="#4A3AFF"
+            android:text="Lanjutkan"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -31,6 +31,7 @@
                     android:text="Riwayat Perjalanan"
                     android:textColor="@color/black"
                     android:textSize="20sp"
+                    android:fontFamily="@font/poppins_reguler"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -63,9 +64,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Oops, belum ada data!"
+        android:text="Yahhh... Belum ada transaksi"
         android:textColor="@color/black"
         android:textSize="20sp"
+        android:fontFamily="@font/poppins_reguler"
         android:textStyle="bold"
         android:visibility="gone" />
 

@@ -8,10 +8,10 @@
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
-    </style>
 
-    <style name="Theme.PemesananTiket.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="android:windowBackground">@color/splash_blue</item>
+        <!-- Konfigurasi splash screen khusus Android 12+ -->
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/logo_splash</item>
+        <item name="android:windowSplashScreenBackground">@color/splash_blue</item>
     </style>
 
 </resources>

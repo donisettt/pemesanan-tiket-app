@@ -6,6 +6,7 @@ import androidx.room.Insert
 import com.donisw.pemesanantiket.model.ModelDatabase
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
+import com.donisw.pemesanantiket.model.UserEntity
 
 @Dao
 interface DatabaseDao {
@@ -17,4 +18,10 @@ interface DatabaseDao {
 
     @Query("DELETE FROM tbl_travel WHERE uid= :uid")
     fun deleteDataById(uid: Int)
+
+    @Insert
+    fun insertUser(user: UserEntity)
+
+    @Query("SELECT * FROM tbl_user WHERE no_hp = :noHp AND password = :password LIMIT 1")
+    fun loginUser(noHp: String, password: String): UserEntity?
 }
