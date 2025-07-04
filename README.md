@@ -19,8 +19,10 @@ Aplikasi *Pemesanan Tiket* adalah aplikasi Android yang dibuat untuk mempermudah
 - ViewModel + LiveData
 - RxJava3
 
-## 📷 Screenshot
-
+## 📷 Screenshot Project
+![1](app/src/main/res/drawable/1.png)
+![2](app/src/main/res/drawable/2.png)
+![3](app/src/main/res/drawable/3.png)
 
 ## 📌 Catatan
 - Aplikasi ini hanya menyimpan data secara lokal (offline).
